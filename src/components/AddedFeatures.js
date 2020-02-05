@@ -1,4 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
+import { addItem, calcPrice, car } from '../actions/actions'
 
 import AddedFeature from './AddedFeature';
 
