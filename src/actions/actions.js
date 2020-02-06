@@ -1,30 +1,18 @@
 export const ADD_ITEM = 'ADD_ITEM';
-export const CALC_PRICE = 'CALC_PRICE';
-export const CAR = 'CAR;'
-export const FEATURES = 'FEATURES';
+export const REMOVE_ITEM = 'CALC_PRICE';
 
-export const addItem = newCarFeature => {
+export const addItem = feature => {
     return {
         type: ADD_ITEM,
-        payload: newCarFeature
+        payload: feature
     }
 }
 
-export const calcPrice = price => {
+export const removeItem = feature => {
     return {
-        type: CALC_PRICE,
-        payload: price
+        type: REMOVE_ITEM,
+        payload: feature
     }
 }
 
-export const car = () => {
-    return {
-        type: CAR
-    }
-}
 
-export const feature = () => {
-    return {
-        type: FEATURES
-    }
-}
